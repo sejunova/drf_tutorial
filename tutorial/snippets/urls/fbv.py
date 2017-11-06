@@ -1,7 +1,7 @@
 from django.conf.urls import url
 from rest_framework.urlpatterns import format_suffix_patterns
 
-from .views import snippet_list, snippet_detail
+from ..views.fbv import *
 
 urlpatterns = [
     url(r'^$', snippet_list, name='snippet_list'),
